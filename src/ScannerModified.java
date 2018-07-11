@@ -11,10 +11,12 @@ public class ScannerModified {
 		System.out.print("Enter the radius: ");
 		int radius = scan.nextInt();
 		System.out.println();
-		System.out.print("Enter the Pi value: ");
-		double pi = scan.nextFloat();
+//		System.out.print("Enter the Pi value: ");		// Instead of asking every time for the PI value
+//		double pi = scan.nextFloat();					// We can use a reference to the Math.PI
 		
-		double area = pi * radius * radius;
+		double area = Math.PI * radius * radius;
+		
+//		double area = pi * radius * radius;
 		
 		System.out.print("The area is: ");
 		System.out.println(area);

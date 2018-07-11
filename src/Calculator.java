@@ -18,26 +18,26 @@ public class Calculator {
 			secondN = scan.nextInt();
 
 			if (operator == '+')
-				out.printf("%d + %d = %d", firstN, secondN, firstN + secondN);
+				System.out.printf("%d + %d = %d", firstN, secondN, firstN + secondN);
 			else if (operator == '-')
-				out.printf("%d - %d = %d", firstN, secondN, firstN - secondN);
+				System.out.printf("%d - %d = %d", firstN, secondN, firstN - secondN);
 			else if (operator == '*')
-				out.printf("%d * %d = %d", firstN, secondN, firstN * secondN);
+				System.out.printf("%d * %d = %d", firstN, secondN, firstN * secondN);
 			else if (operator == '/')
-				out.printf("%d / %d = %d", firstN, secondN, firstN / secondN);
+				System.out.printf("%d / %d = %d", firstN, secondN, firstN / secondN);
 			else if (operator == '%')
-				out.printf("%d %% %d = %d", firstN, secondN, firstN % secondN);
+				System.out.printf("%d %% %d = %d", firstN, secondN, firstN % secondN);
 			else
-				out.printf("Unknown operator");
-			out.printf("\n\n");
+				System.out.printf("Unknown operator");
+			System.out.printf("\n\n");
 
-			out.printf("Do you want to try again? (y/n) ");
+			System.out.printf("Do you want to try again? (y/n) ");
 			cycle = scan.findWithinHorizon(".", 0).charAt(0);
-			out.printf("\n\n");
+			System.out.printf("\n\n");
 
 		} while (cycle == 'y');
 
-		out.printf("Goodbye");
+		System.out.printf("Goodbye");
 		
 		scan.close();
 

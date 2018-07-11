@@ -34,8 +34,8 @@ public class Exercise5 {
 
     public static void processCLArguments(String[] args) {
         // if there are less than 2 elements, display error message
-        // technically this should be != instead of <2, but those are
-        // your instructor's requirements
+        // technically this should be != instead of < 2, but those are
+        // my instructor's requirements
         if (args.length < 2) {
             System.err.println("Usage: java Exercise5 inputFile outputFile");
         }
@@ -50,12 +50,12 @@ public class Exercise5 {
     }
 
     public static void processInputOutputFiles(String[] args) {
-        // since this method is being called form main and main has checked
+        // since this method is being called from main and main has checked
         // argument count, we don't have to do it here
         String input = args[0];
         String output = args[1];
 
-        // create a handle to a files (input and output)
+        // create a handles to the files (input and output)
         File inputFile = new File(input);
         File outputFile = new File(output);
 
